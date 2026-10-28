@@ -1,0 +1,33 @@
+{
+  "name": "@twogiants/pi-openai-enterprise",
+  "version": "0.1.0",
+  "description": "OpenAI Codex models for Enterprise workspaces in pi",
+  "type": "module",
+  "main": "dist/index.js",
+  "author": "Stanislav Jakuschevskij",
+  "pi": {
+    "extensions": [
+      "./dist/index.js"
+    ]
+  },
+  "scripts": {
+    "build": "npm run lint && node build.mjs",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "typescript": "^6.0.3"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": ">=0.80.7",
+    "@earendil-works/pi-coding-agent": ">=0.80.7"
+  },
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "openai",
+    "enterprise",
+    "codex"
+  ],
+  "license": "MIT"
+}
